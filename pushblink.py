@@ -14,8 +14,8 @@ while True:
         print("Button press ")
     else:
         GPIO.output(11, True)
-        time.sleep(1)
+        time.sleep(0.5)
         GPIO.output(11, False)
-        time.sleep(1)
+        time.sleep(0.5)
         print("Button not press ")
-    time.sleep(0.3)
+    time.sleep(0.5)
