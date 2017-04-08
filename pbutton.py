@@ -10,4 +10,4 @@ while True:
     inputValue = GPIO.input(18)
     if (inputValue == False):
         print("Button press ")
-    time.sleep(0.3)
+    #time.sleep(0.3)
