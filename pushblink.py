@@ -9,7 +9,9 @@ GPIO.setup(12, GPIO.IN,pull_up_down=GPIO.PUD_DOWN)
 
 while True:
     inputValue = GPIO.input(12)
-    if (inputValue == False):
+    if (inputValue == True):
+        GPIO.output(11, True)
+    else:
         GPIO.output(11, True)
         time.sleep(1)
         GPIO.output(11, False)
