@@ -6,7 +6,7 @@ GPIO.setup(11, GPIO.OUT)
 
 led = GPIO.PWM(11, 100)
 led.start(0)
-pause = 0.1
+pause = 0.01
 
 for i in range(0, 100 + 1):
    led.ChangeDutyCycle(i)
